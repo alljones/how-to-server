@@ -15,8 +15,8 @@ function badHandleRequest(request, response) {
 }
 
 // Create our servers
-var goodServer = http.createServer(goodHandleRequest);
-var badServer = http.createServer(badHandleRequest);
+let goodServer = http.createServer(goodHandleRequest);
+let badServer = http.createServer(badHandleRequest);
 
 // Starting our servers
 goodServer.listen(goodPort, function() {
